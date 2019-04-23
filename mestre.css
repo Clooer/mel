@@ -1,0 +1,40 @@
+body{
+    font-family: fantasy, sans-serif;
+    background-color: yellow;
+    color: black;
+    background-image: url("./fundo-favo-abelha.jpg");
+    background-size: cover;
+    height: 600px;
+    }
+
+
+.topo { grid-area: header; }
+.menu { grid-area: menu; }
+.corpo { grid-area: main; }
+.direita { grid-area: right; }
+.rodape { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu menu menu menu menu menu'
+    'main main main main right right'
+    'footer footer footer footer footer footer';
+  grid-gap: 1px;
+  padding: 2px;
+}
+
+.grid-container > div {
+  background-color: rgba( 0, 0, 0, 0.2);
+  padding: 20px 2px;
+  font-size: 1em;
+}
+
+
+// Com o seletor a[href^=”tel:”] você informa ao navegador para localizar todos os links cujo atributo href se inicie com a string tel
+
+a[href^="tel:"]:before {
+    content: “\260E”;
+    margin-right: 0.5em;
+}

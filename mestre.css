@@ -4,7 +4,7 @@ body{
     background-image: url("./fundo-favo-abelha.jpg");
     background-size: cover;
     background-attachment: fixed;
-    background-color: white transparent;
+    background-color: black transparent;
     height: 600px;
     }
 
@@ -27,7 +27,7 @@ body{
 }
 
 .grid-container > div {
-  background-color: rgba( 0, 0, 0, 0.2);
+  background-color: rgba( 255, 255, 255, 0.2);
   padding: 20px 2px;
   font-size: 1em;
 }
